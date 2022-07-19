@@ -11,7 +11,7 @@ spec:
 
     license: L-RJON-BZFQU2
 
-    use: NonProduction
+    use: Production
   queueManager:
     debug: false
     imagePullPolicy: IfNotPresent
@@ -45,7 +45,7 @@ spec:
         memory: 1Gi
 
     availability:
-      type: SingleInstance
+      type: NativeHA
 
     image: "replace"
     imagePullPolicy: Always
@@ -54,7 +54,7 @@ spec:
       persistedData:
         enabled: false
       queueManager:
-        type: ephemeral
+        type: persistent-claim
       recoveryLogs:
         enabled: false
 
