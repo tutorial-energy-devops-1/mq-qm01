@@ -99,4 +99,4 @@ tracing:
 
 security: false
 
-ha: false
+ha: true
