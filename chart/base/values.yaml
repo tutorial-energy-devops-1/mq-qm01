@@ -60,7 +60,7 @@ storage:
     enabled: false
 
 availability:
-  type: NativeHA
+  type: SingleInstance
   hatype: NativeHA
 
 mqsc:
@@ -99,4 +99,4 @@ tracing:
 
 security: false
 
-ha: true
+ha: false
